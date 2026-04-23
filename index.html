@@ -3,55 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>InstantWeb - Legal & Privacy</title>
+<title>InstantWeb — About & Legal</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #F2F2F7; color: #111827; font-size: 15px; line-height: 1.8; }
-  .header { background: #fff; padding: 32px 24px 24px; text-align: center; border-bottom: 1px solid #E5E7EB; }
-  .logo { width: 72px; height: 72px; background: #2563EB; border-radius: 18px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 36px; font-weight: 900; color: #fff; }
-  .header h1 { font-size: 26px; font-weight: 800; color: #111827; }
-  .header p { color: #6B7280; font-size: 13px; margin-top: 4px; }
-  .tabs { display: flex; background: #fff; border-bottom: 2px solid #E5E7EB; overflow-x: auto; position: sticky; top: 0; z-index: 100; scrollbar-width: none; }
-  .tabs::-webkit-scrollbar { display: none; }
-  .tab { padding: 14px 18px; font-size: 14px; font-weight: 600; color: #6B7280; cursor: pointer; white-space: nowrap; border-bottom: 3px solid transparent; margin-bottom: -2px; text-decoration: none; display: flex; align-items: center; gap: 6px; }
-  .tab:hover { color: #2563EB; }
-  .tab.active { color: #2563EB; border-bottom-color: #2563EB; }
-  .section { display: none; padding: 28px 20px 60px; max-width: 760px; margin: 0 auto; }
-  .section.active { display: block; }
-  h2 { font-size: 15px; font-weight: 700; color: #1e40af; margin: 24px 0 8px; padding-bottom: 6px; border-bottom: 1px solid #DBEAFE; display: flex; align-items: center; gap: 8px; }
-  h2:first-of-type { margin-top: 0; }
-  h3 { font-size: 15px; font-weight: 700; color: #111827; margin-bottom: 6px; }
-  p { color: #374151; margin-bottom: 12px; }
-  ul { padding-left: 20px; margin-bottom: 12px; }
-  li { color: #374151; margin-bottom: 6px; }
-  a { color: #2563EB; font-weight: 600; }
-  .chip { display: inline-flex; align-items: center; gap: 4px; background: #ECFDF5; color: #059669; padding: 3px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; margin-left: 8px; vertical-align: middle; }
-  .chip-ad { display: inline-flex; align-items: center; gap: 4px; background: #FEF3C7; color: #92400E; padding: 3px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; margin-left: 6px; vertical-align: middle; }
-  .badge { display: inline-flex; align-items: center; gap: 4px; background: #DBEAFE; color: #1e40af; padding: 2px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; margin-bottom: 8px; }
-  .badge-g { display: inline-flex; align-items: center; gap: 4px; background: #FEF9C3; color: #854D0E; padding: 2px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; margin-bottom: 8px; }
-  .warn { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 16px; border-radius: 8px; margin: 14px 0; color: #92400E; display: flex; gap: 10px; align-items: flex-start; }
-  .danger { background: #FEF2F2; border-left: 4px solid #DC2626; padding: 14px 16px; border-radius: 8px; margin: 14px 0; color: #991B1B; display: flex; gap: 10px; align-items: flex-start; }
-  .info { background: #EFF6FF; border-left: 4px solid #2563EB; padding: 14px 16px; border-radius: 8px; margin: 14px 0; color: #1e40af; display: flex; gap: 10px; align-items: flex-start; }
-  .card { background: #fff; border: 1px solid #E5E7EB; border-radius: 14px; padding: 18px 20px; margin-bottom: 16px; }
-  .dev-card { background: linear-gradient(135deg, #1A1A1A, #2C2C2C); border-radius: 16px; padding: 24px 20px; text-align: center; margin-bottom: 20px; color: #fff; }
-  .dev-logo { width: 56px; height: 56px; background: #2563EB; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; font-size: 26px; font-weight: 900; color: #fff; }
-  .dev-card h3 { color: #fff; font-size: 18px; margin-bottom: 4px; }
-  .dev-card p { color: #9CA3AF; font-size: 13px; margin: 0; }
-  .dev-row { color: #60A5FA; font-size: 12px; margin-top: 8px; display: flex; align-items: center; justify-content: center; gap: 6px; }
-  .contact-row { display: flex; align-items: center; gap: 10px; background: #fff; border: 1px solid #E5E7EB; border-radius: 12px; padding: 14px 18px; margin-top: 8px; }
-  .page-title { font-size: 22px; font-weight: 800; color: #111827; margin-bottom: 4px; }
-  .page-sub { color: #6B7280; font-size: 12px; margin-bottom: 24px; }
-  .footer { text-align: center; padding: 40px 20px; color: #9CA3AF; font-size: 12px; border-top: 1px solid #E5E7EB; margin-top: 20px; }
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#F4F6FA;color:#111827;font-size:15px;line-height:1.75}
+.header{background:#fff;padding:36px 24px 28px;text-align:center;border-bottom:1px solid #E5E7EB}
+.logo{width:76px;height:76px;background:#2563EB;border-radius:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:38px;font-weight:900;color:#fff;box-shadow:0 4px 16px rgba(37,99,235,.25)}
+.header h1{font-size:24px;font-weight:800;color:#111827}
+.header p{color:#6B7280;font-size:13px;margin-top:6px}
+.tabs{display:flex;background:#fff;border-bottom:2px solid #E5E7EB;overflow-x:auto;position:sticky;top:0;z-index:100;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{padding:13px 15px;font-size:13px;font-weight:600;color:#6B7280;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-2px;text-decoration:none;display:flex;align-items:center;gap:5px}
+.tab:hover{color:#2563EB}
+.tab.active{color:#2563EB;border-bottom-color:#2563EB}
+.section{display:none;padding:24px 18px 60px;max-width:720px;margin:0 auto}
+.section.active{display:block}
+h2{font-size:14px;font-weight:700;color:#1e40af;margin:22px 0 8px;padding-bottom:6px;border-bottom:1px solid #DBEAFE;display:flex;align-items:center;gap:7px}
+h2:first-of-type{margin-top:0}
+h3{font-size:14.5px;font-weight:700;color:#111827;margin-bottom:5px}
+p{color:#374151;margin-bottom:10px;font-size:14px}
+ul{padding-left:18px;margin-bottom:10px}
+li{color:#374151;margin-bottom:5px;font-size:14px}
+a{color:#2563EB;font-weight:600;text-decoration:none}
+a:hover{text-decoration:underline}
+.chip{display:inline-flex;align-items:center;gap:4px;background:#ECFDF5;color:#059669;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;margin-left:6px;vertical-align:middle}
+.chip-ad{display:inline-flex;align-items:center;gap:4px;background:#FEF3C7;color:#92400E;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;margin-left:6px;vertical-align:middle}
+.badge{display:inline-flex;align-items:center;gap:4px;background:#DBEAFE;color:#1e40af;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700;margin-bottom:8px}
+.badge-g{display:inline-flex;align-items:center;gap:4px;background:#FEF9C3;color:#854D0E;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700;margin-bottom:8px}
+.alert{padding:13px 15px;border-radius:10px;margin:12px 0;display:flex;gap:10px;align-items:flex-start;font-size:13.5px}
+.alert svg{flex-shrink:0;margin-top:1px}
+.alert-info{background:#EFF6FF;border-left:4px solid #2563EB;color:#1e40af}
+.alert-warn{background:#FFFBEB;border-left:4px solid #F59E0B;color:#92400E}
+.alert-danger{background:#FEF2F2;border-left:4px solid #DC2626;color:#991B1B}
+.card{background:#fff;border:1px solid #E5E7EB;border-radius:14px;padding:16px 18px;margin-bottom:14px}
+.dev-card{background:linear-gradient(135deg,#111827,#1e293b);border-radius:16px;padding:24px 20px;text-align:center;margin-bottom:18px;color:#fff}
+.dev-card h3{color:#fff;font-size:18px;margin-bottom:4px}
+.dev-card p{color:#9CA3AF;font-size:13px;margin:0}
+.dev-row{color:#60A5FA;font-size:12px;margin-top:8px;display:flex;align-items:center;justify-content:center;gap:6px}
+.contact-row{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:13px 16px;margin-top:8px;font-size:14px}
+.app-hero{background:linear-gradient(135deg,#1e3a8a,#2563EB);border-radius:20px;padding:28px 20px;text-align:center;margin-bottom:18px;color:#fff}
+.app-hero-logo{width:68px;height:68px;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.3);border-radius:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:32px;font-weight:900}
+.app-hero h2{color:#fff;border:none;font-size:21px;margin:0 0 4px;display:block}
+.version-badge{display:inline-block;background:rgba(255,255,255,.2);padding:3px 12px;border-radius:20px;font-size:12px;font-weight:700;margin-top:8px}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.stat-box{background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 10px;text-align:center}
+.stat-num{font-size:20px;font-weight:800;color:#2563EB}
+.stat-lbl{font-size:11px;color:#6B7280;margin-top:2px}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+.feature-item{background:#fff;border:1px solid #E5E7EB;border-radius:12px;padding:14px 12px}
+.feature-icon{width:32px;height:32px;background:#EFF6FF;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.feature-title{font-size:13px;font-weight:700;color:#111827;margin-bottom:2px}
+.feature-desc{font-size:12px;color:#6B7280;line-height:1.5}
+.whats-new{background:#fff;border:1px solid #E5E7EB;border-radius:14px;padding:16px 18px;margin-bottom:16px}
+.whats-new h3{font-size:13.5px;font-weight:700;color:#059669;margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.new-item{display:flex;gap:10px;margin-bottom:8px;align-items:flex-start}
+.new-dot{width:6px;height:6px;background:#2563EB;border-radius:50%;flex-shrink:0;margin-top:8px}
+.new-text{font-size:13.5px;color:#374151}
+.dl-btn{display:flex;align-items:center;gap:12px;background:#2563EB;color:#fff;border-radius:13px;padding:13px 18px;text-decoration:none;margin-bottom:10px;font-weight:700;font-size:14px}
+.dl-btn:hover{background:#1d4ed8;text-decoration:none}
+.dl-btn-amz{background:#FF9900}
+.dl-btn-amz:hover{background:#e68a00}
+.page-title{font-size:20px;font-weight:800;color:#111827;margin-bottom:4px}
+.page-sub{color:#6B7280;font-size:12px;margin-bottom:22px}
+.footer{text-align:center;padding:36px 20px;color:#9CA3AF;font-size:12px;border-top:1px solid #E5E7EB;margin-top:20px}
 </style>
 </head>
 <body>
-
 <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
   <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
   <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
   <symbol id="i-warn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
   <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
-  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
   <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
   <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></symbol>
   <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></symbol>
@@ -62,259 +85,240 @@
   <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
   <symbol id="i-ad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M8 12h8M12 8v8"/></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+  <symbol id="i-gh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></symbol>
+  <symbol id="i-term" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></symbol>
 </svg>
 
 <div class="header">
   <div class="logo">W</div>
   <h1>InstantWeb</h1>
-  <p>by TechSetuApps &nbsp;&bull;&nbsp; v1.2.0 (Build 3) &nbsp;&bull;&nbsp; Darbhanga, Bihar, India</p>
+  <p>by TechSetuApps &nbsp;&bull;&nbsp; v1.3.0 (Build 4) &nbsp;&bull;&nbsp; Darbhanga, Bihar, India</p>
 </div>
 
 <div class="tabs">
-  <a class="tab active" onclick="return showTab('privacy',this)" href="#">
-    <svg width="15" height="15"><use href="#i-shield"/></svg> Privacy Policy
-  </a>
-  <a class="tab" onclick="return showTab('terms',this)" href="#">
-    <svg width="15" height="15"><use href="#i-doc"/></svg> Terms of Use
-  </a>
-  <a class="tab" onclick="return showTab('disclaimer',this)" href="#">
-    <svg width="15" height="15"><use href="#i-warn"/></svg> Disclaimer
-  </a>
-  <a class="tab" onclick="return showTab('credits',this)" href="#">
-    <svg width="15" height="15"><use href="#i-star"/></svg> Credits
-  </a>
+  <a class="tab active" onclick="return show('about',this)" href="#"><svg width="14" height="14"><use href="#i-shield"/></svg> About</a>
+  <a class="tab" onclick="return show('privacy',this)" href="#"><svg width="14" height="14"><use href="#i-lock"/></svg> Privacy</a>
+  <a class="tab" onclick="return show('terms',this)" href="#"><svg width="14" height="14"><use href="#i-doc"/></svg> Terms</a>
+  <a class="tab" onclick="return show('disclaimer',this)" href="#"><svg width="14" height="14"><use href="#i-warn"/></svg> Disclaimer</a>
+  <a class="tab" onclick="return show('credits',this)" href="#"><svg width="14" height="14"><use href="#i-star"/></svg> Credits</a>
 </div>
 
-<!-- PRIVACY POLICY -->
-<div id="privacy" class="section active">
-  <p class="page-title">Privacy Policy
-    <span class="chip"><svg width="11" height="11"><use href="#i-check"/></svg> No Personal Data Collected</span>
-    <span class="chip-ad">📢 Contains Ads</span>
-  </p>
+<!-- ABOUT -->
+<div id="about" class="section active">
+  <div class="app-hero">
+    <div class="app-hero-logo">W</div>
+    <h2>InstantWeb</h2>
+    <p style="color:rgba(255,255,255,.75);font-size:13px;margin-top:4px;">Local HTML Server &amp; Live Preview</p>
+    <div class="version-badge">v1.3.0 &nbsp;&bull;&nbsp; April 2026</div>
+  </div>
+  <div class="stat-row">
+    <div class="stat-box"><div class="stat-num">7090</div><div class="stat-lbl">Default Port</div></div>
+    <div class="stat-box"><div class="stat-num">500ms</div><div class="stat-lbl">Live Reload</div></div>
+    <div class="stat-box"><div class="stat-num">Free</div><div class="stat-lbl">Always</div></div>
+  </div>
+  <div class="whats-new">
+    <h3><svg width="15" height="15" color="#059669"><use href="#i-zap"/></svg> What's New in v1.3.0</h3>
+    <div class="new-item"><div class="new-dot"></div><div class="new-text"><b>Multi-file support</b> — Host CSS, JS, JSON files alongside HTML</div></div>
+    <div class="new-item"><div class="new-dot"></div><div class="new-text"><b>All file types served</b> — .txt, .json, .xml and more via localhost</div></div>
+    <div class="new-item"><div class="new-dot"></div><div class="new-text"><b>App kill fix</b> — WakeLock prevents Android from stopping the server</div></div>
+    <div class="new-item"><div class="new-dot"></div><div class="new-text"><b>Title bar fix</b> — Correct position on all Android versions</div></div>
+    <div class="new-item"><div class="new-dot"></div><div class="new-text"><b>Custom port fix</b> — Viewer devices now connect on the correct port</div></div>
+    <div class="new-item"><div class="new-dot"></div><div class="new-text"><b>Google AdMob</b> — Short ad before hosting to support free development</div></div>
+    <div class="new-item"><div class="new-dot"></div><div class="new-text"><b>UI improvements</b> — Cleaner layout, better indicators throughout</div></div>
+  </div>
+  <h2><svg width="14" height="14"><use href="#i-check"/></svg> Features</h2>
+  <div class="feature-grid">
+    <div class="feature-item"><div class="feature-icon"><svg width="16" height="16" color="#2563EB"><use href="#i-server"/></svg></div><div class="feature-title">Local HTTP Server</div><div class="feature-desc">Serve files on port 7090 (customizable)</div></div>
+    <div class="feature-item"><div class="feature-icon"><svg width="16" height="16" color="#2563EB"><use href="#i-zap"/></svg></div><div class="feature-title">Live Reload</div><div class="feature-desc">Auto-refresh in 500ms on file save</div></div>
+    <div class="feature-item"><div class="feature-icon"><svg width="16" height="16" color="#2563EB"><use href="#i-folder"/></svg></div><div class="feature-title">Multi-File</div><div class="feature-desc">HTML + CSS + JS + JSON together</div></div>
+    <div class="feature-item"><div class="feature-icon"><svg width="16" height="16" color="#2563EB"><use href="#i-wifi"/></svg></div><div class="feature-title">Hotspot Share</div><div class="feature-desc">Share with any device on your network</div></div>
+    <div class="feature-item"><div class="feature-icon"><svg width="16" height="16" color="#2563EB"><use href="#i-term"/></svg></div><div class="feature-title">JS Console</div><div class="feature-desc">Built-in Eruda &amp; Legacy console</div></div>
+    <div class="feature-item"><div class="feature-icon"><svg width="16" height="16" color="#2563EB"><use href="#i-plug"/></svg></div><div class="feature-title">ACode Plugin</div><div class="feature-desc">InstantWeb LivePreviewer for ACode</div></div>
+  </div>
+  <h2><svg width="14" height="14"><use href="#i-dl"/></svg> Download</h2>
+  <a class="dl-btn" href="https://apkpure.net/instantweb/app.techsetuapps.instantweb/" target="_blank"><svg width="20" height="20" color="#fff"><use href="#i-dl"/></svg> Download on APKPure</a>
+  <a class="dl-btn dl-btn-amz" href="https://www.amazon.com/gp/product/B0GTHYKF7D" target="_blank"><svg width="20" height="20" color="#fff"><use href="#i-dl"/></svg> Download on Amazon Appstore</a>
+  <h2><svg width="14" height="14"><use href="#i-user"/></svg> Developer</h2>
+  <div class="card" style="display:flex;gap:14px;align-items:center;">
+    <div style="width:44px;height:44px;background:#2563EB;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:#fff;flex-shrink:0;">T</div>
+    <div>
+      <div style="font-weight:700;font-size:14.5px;color:#111827;">TechSetuApps</div>
+      <div style="font-size:13px;color:#6B7280;margin-top:2px;">Darbhanga, Bihar, India</div>
+      <a href="mailto:techsetuapps@gmail.com" style="font-size:13px;">techsetuapps@gmail.com</a>
+    </div>
+  </div>
+<h2><svg width="14" height="14"><use href="#i-globe"/></svg> Links</h2>
+  <div class="contact-row"><svg width="18" height="18" color="#333"><use href="#i-gh"/></svg><a href="https://github.com/TechSetuApps" target="_blank">github.com/TechSetuApps</a></div>
+  <div class="contact-row"><svg width="18" height="18" color="#FF0000"><use href="#i-yt"/></svg><a href="https://youtube.com/@techsetuappsofficial" target="_blank">youtube.com/@techsetuappsofficial</a></div>
+</div>
+
+<!-- PRIVACY -->
+<div id="privacy" class="section">
+  <p class="page-title">Privacy Policy <span class="chip"><svg width="10" height="10"><use href="#i-check"/></svg> No Personal Data</span><span class="chip-ad"><svg width="10" height="10"><use href="#i-ad"/></svg> Contains Ads</span></p>
   <p class="page-sub">Last updated: April 2026</p>
-
-  <h2><svg width="15" height="15"><use href="#i-shield"/></svg> Overview</h2>
-  <p>InstantWeb is a local HTML file hosting tool by TechSetuApps. We are fully committed to your privacy. This policy explains what data we access and why.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-lock"/></svg> Data We Do NOT Collect</h2>
+  <h2><svg width="14" height="14"><use href="#i-shield"/></svg> Overview</h2>
+  <p>InstantWeb is a local HTML file hosting tool by TechSetuApps. We are fully committed to your privacy.</p>
+  <h2><svg width="14" height="14"><use href="#i-lock"/></svg> Data We Do NOT Collect</h2>
   <ul>
     <li>No personal information is collected or stored remotely by us.</li>
     <li>No usage analytics or crash reports are sent to any server owned by us.</li>
-    <li>Files you serve are never uploaded to any cloud or third-party server by us.</li>
+    <li>Files you serve are never uploaded to any cloud or third-party server.</li>
     <li>No account or registration is required.</li>
   </ul>
-
-  <h2><svg width="15" height="15"><use href="#i-ad"/></svg> Advertising (Google AdMob)</h2>
-  <div class="info">
-    <svg width="18" height="18"><use href="#i-ad"/></svg>
-    <span>InstantWeb displays advertisements via <b>Google AdMob</b> to support free development. A short interstitial ad is shown before each hosting session. A <b>2-minute grace period</b> applies — re-hosting within 2 minutes does not show another ad.</span>
-  </div>
-  <p>AdMob may collect and use data to serve relevant ads, including:</p>
+  <h2><svg width="14" height="14"><use href="#i-ad"/></svg> Advertising (Google AdMob)</h2>
+  <div class="alert alert-info"><svg width="16" height="16"><use href="#i-ad"/></svg><span>InstantWeb displays ads via <b>Google AdMob</b> to support free development. A short interstitial ad appears before each hosting session. A <b>2-minute grace period</b> applies.</span></div>
+  <p>AdMob may collect device advertising ID, IP address, and app interaction data. Governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+  <h2><svg width="14" height="14"><use href="#i-doc"/></svg> Local Storage Only</h2>
+  <p>InstantWeb temporarily copies selected files to your device's local cache to serve them. This data never leaves your device and is cleared when hosting stops.</p>
+  <h2><svg width="14" height="14"><use href="#i-globe"/></svg> Network Access</h2>
+  <p>The app creates a local HTTP server on your device (default port 7090), accessible only on the same local network. No personal data is transmitted to the internet.</p>
+  <h2><svg width="14" height="14"><use href="#i-refresh"/></svg> App Update Check</h2>
+  <p>On startup, InstantWeb fetches a small version file from GitHub. <b>No personal data is sent</b> — only the version number is compared locally.</p>
+  <h2><svg width="14" height="14"><use href="#i-key"/></svg> Permissions Used</h2>
   <ul>
-    <li>Device advertising identifier (Advertising ID)</li>
-    <li>IP address and approximate location</li>
-    <li>App interaction data for ad relevance</li>
+    <li><b>INTERNET</b> — Run the local HTTP server, load ads, and check for updates.</li>
+    <li><b>ACCESS_WIFI_STATE / ACCESS_NETWORK_STATE</b> — Detect your hotspot IP address.</li>
+    <li><b>READ_EXTERNAL_STORAGE / READ_MEDIA</b> — Select files from your device.</li>
+    <li><b>POST_NOTIFICATIONS</b> — Show the "Hosting Active" persistent notification.</li>
+    <li><b>FOREGROUND_SERVICE</b> — Keep the server running in the background.</li>
+    <li><b>WAKE_LOCK</b> — Prevent Android from stopping the server due to battery optimization.</li>
   </ul>
-  <p>Google's data collection is governed by Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>. We do not control or access the data collected by AdMob.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-doc"/></svg> Local Storage Only</h2>
-  <p>InstantWeb temporarily copies selected HTML files to your device's local cache solely to serve them over the local HTTP server. This data never leaves your device and is deleted when hosting stops.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-globe"/></svg> Network Access</h2>
-  <p>The app creates a local HTTP server on your device (default port 7090), accessible only by devices on the same local network. No personal data is transmitted to the internet through this server.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-refresh"/></svg> App Update Check</h2>
-  <p>On startup, InstantWeb silently checks for updates by fetching a small version file from GitHub. <b>No personal data is sent</b> — only the app version is compared locally. Fails silently if offline.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-key"/></svg> Permissions Used</h2>
-  <ul>
-    <li><b>INTERNET:</b> To run the local HTTP server, load ads, and check for updates.</li>
-    <li><b>ACCESS_WIFI_STATE / ACCESS_NETWORK_STATE:</b> To detect your hotspot IP address.</li>
-    <li><b>READ_EXTERNAL_STORAGE / READ_MEDIA:</b> To select HTML files from your device.</li>
-    <li><b>POST_NOTIFICATIONS:</b> To show the "Hosting Active" notification.</li>
-    <li><b>FOREGROUND_SERVICE:</b> To keep the server running in the background.</li>
-  </ul>
-
-  <h2><svg width="15" height="15"><use href="#i-user"/></svg> Children's Privacy</h2>
-  <p>InstantWeb is not directed at children under 13. We do not knowingly collect any information from children under 13. If you are under 13, you must not use this app.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-mail"/></svg> Contact</h2>
-  <div class="contact-row">
-    <svg width="20" height="20" color="#2563EB"><use href="#i-mail"/></svg>
-    <a href="mailto:techsetuapps@gmail.com">techsetuapps@gmail.com</a>
-  </div>
+  <h2><svg width="14" height="14"><use href="#i-user"/></svg> Children's Privacy</h2>
+  <p>InstantWeb is not directed at children under 13. We do not knowingly collect information from children under 13.</p>
+  <h2><svg width="14" height="14"><use href="#i-mail"/></svg> Contact</h2>
+  <div class="contact-row"><svg width="18" height="18" color="#2563EB"><use href="#i-mail"/></svg><a href="mailto:techsetuapps@gmail.com">techsetuapps@gmail.com</a></div>
 </div>
 
-<!-- TERMS OF USE -->
+<!-- TERMS -->
 <div id="terms" class="section">
   <p class="page-title">Terms of Use</p>
   <p class="page-sub">Last updated: April 2026 &bull; Effective immediately upon acceptance.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-check"/></svg> 1. Acceptance</h2>
+  <h2><svg width="14" height="14"><use href="#i-check"/></svg> 1. Acceptance</h2>
   <p>By using InstantWeb, you agree to these Terms. If you do not agree, you must not use this application.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-user"/></svg> 2. Age Requirement</h2>
-  <div class="info">
-    <svg width="18" height="18"><use href="#i-user"/></svg>
-    <span>You must be at least <b>13 years of age</b> to use InstantWeb. By using this app, you confirm you are 13 or older.</span>
-  </div>
-
-  <h2><svg width="15" height="15"><use href="#i-check"/></svg> 3. Permitted Use</h2>
+  <h2><svg width="14" height="14"><use href="#i-user"/></svg> 2. Age Requirement</h2>
+  <div class="alert alert-info"><svg width="16" height="16"><use href="#i-user"/></svg><span>You must be at least <b>13 years of age</b> to use InstantWeb.</span></div>
+  <h2><svg width="14" height="14"><use href="#i-check"/></svg> 3. Permitted Use</h2>
   <ul>
-    <li>Personal, educational, or professional web development and preview purposes.</li>
-    <li>Sharing HTML/CSS/JS files with authorized devices on a private local network.</li>
+    <li>Personal, educational, or professional web development and preview.</li>
+    <li>Sharing HTML/CSS/JS/JSON files with authorized devices on a private local network.</li>
     <li>Testing and previewing front-end code on mobile devices.</li>
   </ul>
-
-  <h2><svg width="15" height="15"><use href="#i-block"/></svg> 4. Prohibited Use</h2>
-  <div class="danger">
-    <svg width="18" height="18"><use href="#i-block"/></svg>
-    <span>The following are strictly prohibited:</span>
-  </div>
+  <h2><svg width="14" height="14"><use href="#i-block"/></svg> 4. Prohibited Use</h2>
+  <div class="alert alert-danger"><svg width="16" height="16"><use href="#i-block"/></svg><span>The following are strictly prohibited:</span></div>
   <ul>
     <li>Decompiling, reverse engineering, or modifying this application.</li>
     <li>Redistributing or sublicensing the app without written permission.</li>
     <li>Using the app to host illegal, harmful, or infringing content.</li>
     <li>Using the app for phishing, hacking, or any malicious activity.</li>
     <li>Hosting sensitive personal data over unsecured networks.</li>
-    <li>Bypassing any security feature or update mechanism within the app.</li>
-    <li>Artificially clicking, tapping, or interacting with ads shown in the app. This violates Google AdMob policies and may result in account termination.</li>
+    <li>Artificially clicking or interacting with ads — violates Google AdMob policies.</li>
   </ul>
-
-  <h2><svg width="15" height="15"><use href="#i-ad"/></svg> 5. Advertising</h2>
-  <p>InstantWeb shows a short interstitial ad before each hosting session via Google AdMob. A 2-minute grace period applies after each ad — no ad is shown if you re-host within 2 minutes. Ads support the free development of InstantWeb.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-code"/></svg> 6. Intellectual Property</h2>
+  <h2><svg width="14" height="14"><use href="#i-ad"/></svg> 5. Advertising</h2>
+  <p>A short interstitial ad is shown before each hosting session via Google AdMob. A 2-minute grace period applies. Ads support the free development of InstantWeb.</p>
+  <h2><svg width="14" height="14"><use href="#i-code"/></svg> 6. Intellectual Property</h2>
   <p>All original source code, UI design, and branding of InstantWeb are the exclusive intellectual property of TechSetuApps.</p>
-  <div class="warn">
-    <svg width="18" height="18"><use href="#i-warn"/></svg>
-    <span>This app uses NanoHTTPD (BSD-3-Clause), Eruda (MIT), and Google AdMob SDK (Apache 2.0). See Credits for full attribution.</span>
-  </div>
-
-  <h2><svg width="15" height="15"><use href="#i-refresh"/></svg> 7. App Updates</h2>
+  <div class="alert alert-warn"><svg width="16" height="16"><use href="#i-warn"/></svg><span>This app uses NanoHTTPD (BSD-3-Clause), Eruda (MIT), and Google AdMob SDK (Apache 2.0). See Credits for full attribution.</span></div>
+  <h2><svg width="14" height="14"><use href="#i-refresh"/></svg> 7. App Updates</h2>
   <p>We may push mandatory updates through the in-app update system. Continued use may require accepting updated versions.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-doc"/></svg> 8. Termination</h2>
+  <h2><svg width="14" height="14"><use href="#i-doc"/></svg> 8. Termination</h2>
   <p>We reserve the right to terminate your access if you violate these Terms.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-globe"/></svg> 9. Governing Law</h2>
-  <p>Disputes shall be resolved in good faith directly with the developer at <a href="mailto:techsetuapps@gmail.com">techsetuapps@gmail.com</a>.</p>
+  <h2><svg width="14" height="14"><use href="#i-globe"/></svg> 9. Governing Law</h2>
+  <p>Disputes shall be resolved in good faith with the developer at <a href="mailto:techsetuapps@gmail.com">techsetuapps@gmail.com</a>.</p>
 </div>
 
 <!-- DISCLAIMER -->
 <div id="disclaimer" class="section">
   <p class="page-title">Disclaimer</p>
   <p class="page-sub">Last updated: April 2026 &bull; Please read carefully before use.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-doc"/></svg> No Warranty</h2>
-  <p>InstantWeb is provided <b>"as is"</b> without any warranties of any kind, including fitness for a particular purpose.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-block"/></svg> Limitation of Liability</h2>
+  <h2><svg width="14" height="14"><use href="#i-doc"/></svg> No Warranty</h2>
+  <p>InstantWeb is provided <b>"as is"</b> without any warranties of any kind.</p>
+  <h2><svg width="14" height="14"><use href="#i-block"/></svg> Limitation of Liability</h2>
   <p>TechSetuApps shall not be held liable for:</p>
   <ul>
     <li>Any loss of data or files arising from use of this app.</li>
     <li>Any unauthorized access to content you serve through this app.</li>
     <li>Any damage caused by malware or third-party interference.</li>
     <li>Financial or other losses resulting from using this application.</li>
-    <li>Any content, products, or services advertised by third-party ads shown in the app.</li>
+    <li>Any content or services advertised by third-party ads in the app.</li>
   </ul>
-
-  <h2><svg width="15" height="15"><use href="#i-ad"/></svg> Third-Party Advertising</h2>
-  <div class="info">
-    <svg width="18" height="18"><use href="#i-ad"/></svg>
-    <span>InstantWeb uses Google AdMob to display ads. We do not control ad content. We are not responsible for any claims or damages arising from third-party ad content. Ad content is governed by Google's advertising policies.</span>
-  </div>
-
-  <h2><svg width="15" height="15"><use href="#i-lock"/></svg> Security Responsibility</h2>
-  <div class="danger">
-    <svg width="18" height="18"><use href="#i-warn"/></svg>
-    <span>You are solely responsible for the security of content you host. Do NOT host confidential or sensitive information over public or unsecured networks.</span>
-  </div>
-
-  <h2><svg width="15" height="15"><use href="#i-block"/></svg> Misuse &amp; Illegal Activity</h2>
-  <p>If any user misuses InstantWeb for hacking, phishing, or any illegal purpose — TechSetuApps bears <b>zero legal responsibility</b>. All liability rests entirely with the user.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-globe"/></svg> Third-Party Networks</h2>
-  <p>When sharing via hotspot or local network, TechSetuApps is not responsible for the security of that network or any connected devices.</p>
-
-  <h2><svg width="15" height="15"><use href="#i-warn"/></svg> Sensitive Projects</h2>
-  <p>Users who use InstantWeb with sensitive or confidential projects do so entirely at their own risk.</p>
+  <h2><svg width="14" height="14"><use href="#i-ad"/></svg> Third-Party Advertising</h2>
+  <div class="alert alert-info"><svg width="16" height="16"><use href="#i-ad"/></svg><span>InstantWeb uses Google AdMob for ads. We do not control ad content and are not responsible for any claims arising from third-party ad content.</span></div>
+  <h2><svg width="14" height="14"><use href="#i-lock"/></svg> Security Responsibility</h2>
+  <div class="alert alert-danger"><svg width="16" height="16"><use href="#i-warn"/></svg><span>You are solely responsible for the content you host. Do NOT host confidential or sensitive information over public or unsecured networks.</span></div>
+  <h2><svg width="14" height="14"><use href="#i-block"/></svg> Misuse &amp; Illegal Activity</h2>
+  <p>If any user misuses InstantWeb for hacking, phishing, or any illegal purpose, TechSetuApps bears <b>zero legal responsibility</b>. All liability rests entirely with the user.</p>
+  <h2><svg width="14" height="14"><use href="#i-globe"/></svg> Third-Party Networks</h2>
+  <p>When sharing via hotspot or local network, TechSetuApps is not responsible for the security of that network or connected devices.</p>
 </div>
 
 <!-- CREDITS -->
 <div id="credits" class="section">
   <p class="page-title">Credits</p>
-  <p class="page-sub">Open source libraries &amp; acknowledgements</p>
-
+  <p class="page-sub">Open source libraries &amp; acknowledgements — InstantWeb v1.3.0</p>
   <div class="dev-card">
-    <div class="dev-logo">W</div>
+    <div style="width:52px;height:52px;background:#2563EB;border-radius:13px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:24px;font-weight:900;color:#fff;">W</div>
     <h3>TechSetuApps</h3>
     <p>App Developer &amp; Designer</p>
-    <div class="dev-row">
-      <svg width="13" height="13"><use href="#i-pin"/></svg> Darbhanga, Bihar, India
-    </div>
-    <div class="dev-row">
-      <svg width="13" height="13"><use href="#i-mail"/></svg>
-      <a href="mailto:techsetuapps@gmail.com" style="color:#60A5FA;">techsetuapps@gmail.com</a>
-    </div>
+    <div class="dev-row"><svg width="12" height="12"><use href="#i-pin"/></svg> Darbhanga, Bihar, India</div>
+    <div class="dev-row"><svg width="12" height="12"><use href="#i-mail"/></svg><a href="mailto:techsetuapps@gmail.com" style="color:#60A5FA;">techsetuapps@gmail.com</a></div>
   </div>
-
   <div class="card">
     <div class="badge"><svg width="10" height="10"><use href="#i-code"/></svg> MIT License</div>
     <h3>Eruda</h3>
-    <p>Console for mobile browsers. Provides DevTools-like debugging directly on mobile devices.</p>
+    <p>A powerful console for mobile browsers — used to provide DevTools-style debugging in live preview.</p>
     <p style="color:#6B7280;font-size:12px;">Author: liriliri &nbsp;&bull;&nbsp; <a href="https://github.com/liriliri/eruda" target="_blank">github.com/liriliri/eruda</a></p>
   </div>
-
   <div class="card">
     <div class="badge"><svg width="10" height="10"><use href="#i-code"/></svg> BSD-3-Clause License</div>
     <h3>NanoHTTPD</h3>
-    <p>A lightweight HTTP server library for Java/Android. Used as the core server engine in InstantWeb.</p>
+    <p>A lightweight HTTP server library for Java/Android — core server engine of InstantWeb.</p>
     <p style="color:#6B7280;font-size:12px;">Copyright nanohttpd.org contributors &nbsp;&bull;&nbsp; <a href="https://github.com/NanoHttpd/nanohttpd" target="_blank">github.com/NanoHttpd/nanohttpd</a></p>
   </div>
-
   <div class="card">
-    <div class="badge-g">Google Play Services</div>
+    <div class="badge-g"><svg width="10" height="10"><use href="#i-ad"/></svg> Google Play Services</div>
     <h3>Google AdMob SDK</h3>
-    <p>Advertisement platform by Google used to display interstitial ads — supports free development of InstantWeb.</p>
-    <p style="color:#6B7280;font-size:12px;">© Google LLC &nbsp;&bull;&nbsp; <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+    <p>Advertisement platform used to display interstitial ads that support free development of InstantWeb.</p>
+    <p style="color:#6B7280;font-size:12px;">Google LLC &nbsp;&bull;&nbsp; <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
   </div>
-
   <div class="card">
     <div class="badge"><svg width="10" height="10"><use href="#i-star"/></svg> Acknowledgement</div>
-    <h3>Android Code Studio (ACS)</h3>
-    <p>Special thanks to the <b>ACS (AndroidIDE) team</b> for building an incredible Android IDE that runs on Android devices. InstantWeb was built entirely on a mobile phone using ACS — without a PC or laptop.</p>
-    <p style="color:#6B7280;font-size:12px;"><a href="https://androidide.com" target="_blank">androidide.com</a> &nbsp;&bull;&nbsp; Author: AndroidIDE Team</p>
+    <h3>Android Code Studio (AndroidIDE)</h3>
+    <p>Special thanks to the ACS team for building an amazing IDE for Android devices.</p>
+    <p style="color:#6B7280;font-size:12px;"><a href="https://androidide.com" target="_blank">androidide.com</a></p>
   </div>
-
   <div class="card">
     <div class="badge"><svg width="10" height="10"><use href="#i-code"/></svg> Apache 2.0 License</div>
     <h3>AndroidX / Jetpack Libraries</h3>
-    <p>Core, AppCompat, Activity — standard Android support libraries by Google.</p>
+    <p>Core, AppCompat, Activity — standard Android support libraries.</p>
     <p style="color:#6B7280;font-size:12px;">The Android Open Source Project</p>
   </div>
-
   <div class="card">
     <div class="badge"><svg width="10" height="10"><use href="#i-code"/></svg> Apache 2.0 License</div>
     <h3>Material Components for Android</h3>
     <p>UI components following Material Design guidelines.</p>
     <p style="color:#6B7280;font-size:12px;">Google LLC &nbsp;&bull;&nbsp; <a href="https://material.io" target="_blank">material.io</a></p>
   </div>
-
   <div class="footer">
-    <svg width="18" height="18" color="#2563EB"><use href="#i-shield"/></svg>
-    <p>InstantWeb v1.2.0 (Build 3) &nbsp;&bull;&nbsp; All original code &copy; TechSetuApps 2026</p>
-    <p style="margin-top:6px;">Made with ❤️ in Darbhanga, Bihar, India</p>
+    <svg width="16" height="16" color="#2563EB"><use href="#i-shield"/></svg>
+    <p style="margin-top:6px;">InstantWeb v1.3.0 (Build 4) &nbsp;&bull;&nbsp; All original code &copy; TechSetuApps 2026</p>
+    <p style="margin-top:4px;">Made with care in Darbhanga, Bihar, India</p>
   </div>
 </div>
 
 <script>
-function showTab(id, el) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+function show(id,el){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   el.classList.add('active');
-  window.scrollTo(0, 0);
+  window.scrollTo(0,0);
   return false;
 }
 </script>
